@@ -1,0 +1,45 @@
+.menu {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #333333;
+    z-index: 9999;
+
+    border: 1px solid #111;
+}
+
+.menu::before {
+    content: '';
+    position: absolute;
+    top: -.6rem;
+    right: 5rem;
+    width: 17px;
+    height: 17px;
+    transform: rotate(45deg);
+    background-color: #333333;
+
+    border-left: 1px solid #111;
+    border-top: 1px solid #111;
+}
+
+div ul li {
+    display: flex;
+    list-style-type: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+div ul li a {
+    display: inherit;
+    color: #ccc;
+}
+
+div ul li a:hover {
+    color: white;
+    transition: .3s;
+}
