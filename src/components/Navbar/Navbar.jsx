@@ -5,19 +5,25 @@ import logoImg from '../../assets/images/logo.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import './styles.css';
-import { faBars, faComment, faGamepad, faHouse, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faCartShopping, faComment, faGamepad, faHouse, faPhone, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { DropDownMenu } from '../DropDownMenu/DropDownMenu';
 
 const Navbar = () => {
 
-  const [openProfile, setOpenProfile] = useState(false);
+  const [openMenu, setOpenMenu] = useState(false);
+  const [icon, setIcon] = useState(faBars);
+
+  const toggleMenu = () => {
+    setOpenMenu((prev) => !prev);;
+    setIcon(prevIcon => (prevIcon === faBars ? faXmark : faBars));
+  }
 
   return (
     <header>
       <nav id="navbar">
 
         <div className='barsMenu'>
-          <FontAwesomeIcon icon={faBars} className='navIcon' onClick={() => setOpenProfile((prev) => !prev)} />
+          <FontAwesomeIcon icon={icon} className={`navIcon ${openMenu ? 'navIcon-rotate' : ''}`} onClick={toggleMenu} />
         </div>
 
         <div className="nav-brand">
@@ -40,6 +46,11 @@ const Navbar = () => {
               Jogar</a>
           </li>
           <li>
+            <a href="/" target='_blank' rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faCartShopping} className='navIcon' />
+              Loja</a>
+          </li>
+          <li>
             <a href="https://wa.me/5527988994294" target='_blank' rel="noopener noreferrer">
               <FontAwesomeIcon icon={faPhone} className='navIcon' />
               Suporte</a>
@@ -52,7 +63,7 @@ const Navbar = () => {
         </ul>
       </nav>
       {
-        openProfile && <DropDownMenu />
+        openMenu && <DropDownMenu />
       }
     </header>
   )

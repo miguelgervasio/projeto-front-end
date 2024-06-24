@@ -21,7 +21,7 @@ export class Content extends React.Component {
 
                         <h1>PlayVício Global</h1>
 
-                        <p>Bem-vindo ao PlayVício Global, a plataforma definitiva para todos os jogadores de roleplay! Se você é um entusiasta de roleplay e está em busca de uma maneira fácil e segura de gerenciar suas coins e aproveitar ao máximo sua experiência de jogo, você veio ao lugar certo.
+                        <p>Bem-vindo ao PlayVício Global, a plataforma definitiva para todos os jogadores de roleplay! Se você é um entusiasta de roleplay e está em busca de uma maneira fácil e segura de gerenciar seus coins e aproveitar ao máximo sua experiência de jogo, você veio ao lugar certo.
                         </p>
 
                         <div className='buttons'>

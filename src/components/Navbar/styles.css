@@ -65,6 +65,11 @@ header nav#navbar ul.nav-list li a:hover {
 
 .navIcon {
     padding: 1px 5px;
+    transition: transform 0.3s ease;
+}
+
+.navIcon-rotate {
+    transform: rotate(180deg);
 }
 
 .barsMenu {
