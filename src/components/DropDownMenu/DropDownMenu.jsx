@@ -11,7 +11,7 @@ export class DropDownMenu extends React.Component {
                     <li><a href="https://play.google.com/store/apps/details?id=com.pvgames.store" target='_blank' rel="noopener noreferrer">
                         <FontAwesomeIcon icon={faDownload} className='navIcon' />
                         Jogar</a></li>
-                    <li><a href="/" target='_blank' rel="noopener noreferrer">
+                    <li><a href="/">
                         <FontAwesomeIcon icon={faCartShopping} className='navIcon' />
                         Loja</a></li>
                     <li>

@@ -46,7 +46,7 @@ const Navbar = () => {
               Jogar</a>
           </li>
           <li>
-            <a href="/" target='_blank' rel="noopener noreferrer">
+            <a href="/">
               <FontAwesomeIcon icon={faCartShopping} className='navIcon' />
               Loja</a>
           </li>
