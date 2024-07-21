@@ -9,21 +9,22 @@ main {
     position: relative;
     text-align: justify;
     z-index: 0;
+    animation: fade-down 0.5s;
 }
 
 main h1 {
     padding: 3rem 0rem;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 main p {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: .8rem;
+    line-height: 1.2rem;
     max-width: 40rem;
 }
 
 body {
-    display: flex;
+    /* display: flex; */
 
     background-image: url(../../assets/images/background.jpg);
     background-position: center;
@@ -34,7 +35,8 @@ body {
 }
 
 body aside img.imageAside {
-    width: 500px;
+    width: 400px;
+    animation: fade-down 0.5s;
 }
 
 

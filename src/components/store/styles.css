@@ -1,0 +1,110 @@
+body.bodyStore {
+    background: rgba(22, 22, 22, .8);
+    overflow: auto;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 1.5rem;
+    width: 18rem;
+    height: 3.5rem;
+    font-size: 0.9rem;
+    border: none;
+    background-color: #a10038;
+    opacity: 85%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    transition: .2s;
+}
+
+.actions a {
+    color: #fff;
+}
+
+.actions:hover {
+    background-color: #da005a;
+    transition: .2s;
+}
+
+section.titleStore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section.titleStore h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: 450;
+}
+
+section.titleStore p {
+    padding-top: 2rem;
+    font-weight: 330;
+    text-align: center;
+    width: 50rem;
+    line-height: 1.6rem;
+}
+
+section.buttonBuy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+section.sectionCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div .centerCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+div .cards {
+    width: 50%;
+    background: rgba(22, 22, 22, .8);
+    border-radius: 2rem;
+    padding-bottom: 1rem;
+}
+
+
+div.cards h3 {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+
+div.cards p {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 0 3rem;
+    text-align: justify;
+}
+
+.iconCard {
+    padding-right: 10px;
+}
+
+.buttonBuy,
+.titleStore,
+.cards {
+    animation: fade-down 0.5s;
+}
+
+@media screen and (max-width: 591px) {
+    div .cards {
+        width: 80%;
+    }
+}

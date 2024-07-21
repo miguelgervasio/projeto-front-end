@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './styles.css';
 import { faBars, faCartShopping, faComment, faGamepad, faHouse, faPhone, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { DropDownMenu } from '../DropDownMenu/DropDownMenu';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -14,7 +15,7 @@ const Navbar = () => {
   const [icon, setIcon] = useState(faBars);
 
   const toggleMenu = () => {
-    setOpenMenu((prev) => !prev);;
+    setOpenMenu((prev) => !prev);
     setIcon(prevIcon => (prevIcon === faBars ? faXmark : faBars));
   }
 
@@ -36,9 +37,10 @@ const Navbar = () => {
 
         <ul className="nav-list">
           <li>
-            <a href="/">
+            <Link to={'/'} >
               <FontAwesomeIcon icon={faHouse} className='navIcon' />
-              Home</a>
+              Home
+            </Link>
           </li>
           <li>
             <a href="https://play.google.com/store/apps/details?id=com.pvgames.store" target='_blank' rel="noopener noreferrer">
@@ -46,9 +48,10 @@ const Navbar = () => {
               Jogar</a>
           </li>
           <li>
-            <a href="/">
+          <Link to={'/loja'} >
               <FontAwesomeIcon icon={faCartShopping} className='navIcon' />
-              Loja</a>
+              Loja
+            </Link>
           </li>
           <li>
             <a href="https://wa.me/5527988994294" target='_blank' rel="noopener noreferrer">
